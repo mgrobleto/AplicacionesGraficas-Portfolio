@@ -4,9 +4,10 @@ import { Button } from "@nextui-org/react";
 interface DownloadProps {
     fileUrl: string;
     fileName: string;
+    textColor?: string;
 }
 
-export const DownloadButton: React.FC<DownloadProps> = ({fileUrl, fileName}) => {
+export const DownloadButton: React.FC<DownloadProps> = ({fileUrl, fileName, textColor}) => {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = fileUrl;
@@ -16,7 +17,7 @@ export const DownloadButton: React.FC<DownloadProps> = ({fileUrl, fileName}) => 
     }
 
     return (
-        <Button className="text-sm text-white" variant="flat" color="default" radius="lg" size="sm" onClick={handleDownload}>    
+        <Button className="text-sm" variant="flat" color="default" radius="lg" size="sm" onClick={handleDownload}>    
             Descargar archivo
         </Button>
     )

@@ -22,16 +22,16 @@ export const WorkContainer : React.FC<WorkContent> = ({children}) => {
 
 export const WorkBackground : React.FC = () => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen top-0 sticky">
-            <div className="bg-[#f5778a] h-[70vh] lg:h-auto"></div>
-            <div className="bg-white h-[30vh] lg:min-h-screen"></div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen md:min-h-screen top-0 sticky">
+            <div className="bg-[#f5778a] h-[70vh] lg:h-screen md:h-screen"></div>
+            <div className="bg-white h-[30vh] lg:min-h-screen md:min-h-screen"></div>
         </div>
     )
 }
 
 export const WorkLeft : React.FC<WorkContent> = ( { children }) => {
     return (
-        <div className="flex flex-col items-center justify-center text-1xl lg:text-3xl h-[70vh] lg:h-auto">
+        <div className="flex flex-col items-center justify-center text-1xl lg:text-3xl h-[70vh] lg:h-screen md:h-screen">
             <div className="leading-10 max-w-auto mx-5 py-10 lg:py-0">
                 { children }
             </div>
