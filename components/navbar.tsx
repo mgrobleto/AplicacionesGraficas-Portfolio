@@ -28,7 +28,7 @@ const NavbarComponent : React.FC = () => {
     return (
         <Navbar>
             <NavbarBrand>
-                <p>Aplicaciones Gr&#xe1;ficas</p>
+                <p className="font-bold tracking-wide text-2xl">Aplicaciones Gr&#xe1;ficas | Repositorio</p>
             </NavbarBrand>
             <NavbarContent className="hidden sm:flex gap-4" justify="end">
                 {links.map((l,i) => {
