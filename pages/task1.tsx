@@ -6,8 +6,6 @@ import { DownloadButton } from "@/components/download-button"
 
 const Task1 : React.FC = () => {
 
-    const [imageLoaded, setImageLoaded] = useState(false)
-
     return (
         <div className="">
             <div className="absolute h-full w-full">
@@ -38,7 +36,7 @@ const Task1 : React.FC = () => {
                             />
                             <CardFooter className="justify-between before:bg-white/10 border-white-20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                                 <p className="font-bold text-lg text-white/80">Angry Birds</p>
-                                <DownloadButton fileUrl="/uploads/tarea1/Tarea.ai" fileName="Tarea.ai"/>
+                                <DownloadButton fileUrl="/uploads/tarea1/Tarea.ai" fileName="Tarea.ai" textColor="white"/>
                             </CardFooter>
                         </Card>
                     </WorkRight>

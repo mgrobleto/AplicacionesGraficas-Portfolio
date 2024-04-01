@@ -33,7 +33,7 @@ const NavbarComponent : React.FC = () => {
             <NavbarContent className="hidden sm:flex gap-4" justify="end">
                 {links.map((l,i) => {
                     return(
-                        <NavbarItem>
+                        <NavbarItem key={i}>
                             <Link color="foreground" href={l.path} key={i}>
                                 {l.label}
                             </Link>

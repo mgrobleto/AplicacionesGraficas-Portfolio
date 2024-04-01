@@ -16,8 +16,10 @@ export const DownloadButton: React.FC<DownloadProps> = ({fileUrl, fileName, text
         link.click();
     }
 
+    const textColorName = textColor ? `text-${textColor}` : `text-gray-500`;
+
     return (
-        <Button className="text-sm" variant="flat" color="default" radius="lg" size="sm" onClick={handleDownload}>    
+        <Button className={`text-sm ${textColorName}`} variant="flat" color="default" radius="lg" size="sm" onClick={handleDownload}>    
             Descargar archivo
         </Button>
     )
