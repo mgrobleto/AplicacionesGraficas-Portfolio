@@ -1,4 +1,9 @@
+import React from "react"
+import { Button } from "@nextui-org/react"
+import Link from "next/link"
+
 const Intro : React.FC = () => {
+
     return (
         <div className="h-full ">
             <div className="flex min-h-screen flex-col items-center justify-center p-24 backdrop-blur-lg">
@@ -6,6 +11,14 @@ const Intro : React.FC = () => {
                 <div className="p-12 drop-shadow-[0_5px_3px_rgba(0,0,0,0.5)] text-center flex flex-col items-center justify-center">
                     <h1 className="mb-6 text-4xl lg:text-5xl font-bold">Aplicaciones Gr&#xe1;ficas</h1>
                     <h2 className="font-medium text-sm lg:text-3xl">Repositorio</h2>
+                    <div className="m-5">
+                        <h2 className="font-tiny">Elaborado por Mar&#237;a Gabriela Robleto Guti&#233;rrez | 2020-0429U</h2>
+                        <div className="m-3">
+                            <Link href="https://github.com/mgrobleto/AplicacionesGraficas-Portfolio" target="_blank" className="font-bold text-md bg-[#fee5e7] p-2 rounded-xl hover:bg-[#b91741] hover:text-white">
+                                Ver c&#243;digo
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
