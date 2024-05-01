@@ -2,43 +2,71 @@ import { DownloadButton } from "@/components/download-button"
 import { WorkBackground, WorkContainer, WorkDescription, WorkLeft, WorkRight } from "@/components/work"
 import { Card, CardFooter, Image } from "@nextui-org/react"
 
-const Task3 : React.FC = () => {
+const Task4 : React.FC = () => {
 
     const links = [
         {
-            src: "/assets/task3/Botellas.png",
-            alt: "Botellas",
-            title: "Botellas",
-            fileUrl: "/uploads/tarea3/Botellas.ai",
-            fileName: "Botellas.ai",
+            src: "/assets/task4/A.jpeg",
+            alt: "A",
+            title: "A",
+            fileUrl: "/uploads/tarea4/A.cdr",
+            fileName: "A.ai",
         },
         {
-            src: "/assets/task3/Cara1.png",
-            alt: "Cara 1",
-            title: "Emoji 1",
-            fileUrl: "/uploads/tarea3/Cara1.ai",
-            fileName: "Cara1.ai",
+            src: "/assets/task4/Android.jpeg",
+            alt: "Android",
+            title: "Android",
+            fileUrl: "/uploads/tarea4/Android.cdr",
+            fileName: "Android.cdr",
         },
         {
-            src: "/assets/task3/Cara2.png",
-            alt: "Emoji 2",
-            title: "Emoji 2",
-            fileUrl: "/uploads/tarea3/Cara2.ai",
-            fileName: "Cara2.ai",
+            src: "/assets/task4/Barco.jpeg",
+            alt: "Barco",
+            title: "Barco",
+            fileUrl: "/uploads/tarea4/Barco.cdr",
+            fileName: "Barco.cdr",
         },
         {
-            src: "/assets/task3/Paloma.png",
-            alt: "Paloma",
-            title: "Paloma",
-            fileUrl: "/uploads/tarea3/Paloma.ai",
-            fileName: "Paloma.ai",
+            src: "/assets/task4/Circulo.jpeg",
+            alt: "Circulo",
+            title: "Circulo",
+            fileUrl: "/uploads/tarea4/Circulo.cdr",
+            fileName: "Circulo.cdr",
         },
         {
-            src: "/assets/task3/UNI.png",
-            alt: "UNI Logo",
-            title: "UNI Logo",
-            fileUrl: "/uploads/tarea3/UNI.ai",
-            fileName: "UNI.ai",
+            src: "/assets/task4/K.png",
+            alt: "K",
+            title: "K",
+            fileUrl: "/uploads/tarea4/K.cdr",
+            fileName: "K.cdr",
+        },
+        {
+            src: "/assets/task4/Lorem Ipsum.jpeg",
+            alt: "Lorem Ipsum",
+            title: "Lorem Ipsum",
+            fileUrl: "/uploads/tarea4/Lorem Ipsum.cdr",
+            fileName: "Lorem Ipsum.cdr",
+        },
+        {
+            src: "/assets/task4/Ojo.png",
+            alt: "Ojo",
+            title: "Ojo",
+            fileUrl: "/uploads/tarea4/Ojo.cdr",
+            fileName: "Ojo.cdr",
+        },
+        {
+            src: "/assets/task4/Piña.png",
+            alt: "Piñas",
+            title: "Piñas",
+            fileUrl: "/uploads/tarea4/Piñas.cdr",
+            fileName: "Piñas.cdr",
+        },
+        {
+            src: "/assets/task4/Tato.jpeg",
+            alt: "Tato",
+            title: "Tato",
+            fileUrl: "/uploads/tarea4/Tato.cdr",
+            fileName: "Tato.cdr",
         },
     ]
 
@@ -51,14 +79,14 @@ const Task3 : React.FC = () => {
                 <WorkContainer>
                     <WorkLeft>
                     <div className='text-sm md:text-5xl text-theme font-semibold tracking-tight'>
-                        Actividad &#x23;3
+                        Actividad &#x23;4
                     </div>
                     <WorkDescription>
                         <h2 className="h-5">Conjunto de ilustraciones</h2>
                     </WorkDescription>
                     </WorkLeft>
                     <WorkRight>
-                        <div className="grid grid-rows-2 grid-flow-col gap-4">
+                        <div className="grid grid-rows-2 grid-flow-col gap-2">
                             {links.map((l,i) => {
                                 return (
                                     <Card
@@ -77,8 +105,8 @@ const Task3 : React.FC = () => {
                                         isBlurred
                                     />
                                     <CardFooter className="flex flex-col justify-between before:bg-white/10 border-white-20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-                                        <p className="font-bold text-lg text-[#83183a]">{l.title}</p>
-                                        <DownloadButton fileUrl={l.fileUrl} fileName={l.fileName} />
+                                        <p className="font-bold text-lg text-white">{l.title}</p>
+                                        <DownloadButton fileUrl={l.fileUrl} fileName={l.fileName} textColor="text-white" />
                                     </CardFooter>
                                 </Card>
                                 )
@@ -91,4 +119,4 @@ const Task3 : React.FC = () => {
     )
 }
 
-export default Task3
+export default Task4

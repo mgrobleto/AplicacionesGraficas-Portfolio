@@ -20,6 +20,10 @@ const links = [
     {
         label: 'Tarea 3',
         path: '/task3',
+    },
+    {
+        label: 'Tarea 4',
+        path: '/task4',
     }
 ]
 
